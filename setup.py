@@ -12,7 +12,7 @@ long_description = readme()
 
 setuptools.setup(
     name='vs-rename',
-    version='0.1.1',
+    version='0.1.2',
     scripts=['vs_filenames.py'],
     author="logonoff",
     author_email="hello@logonoff.co",
