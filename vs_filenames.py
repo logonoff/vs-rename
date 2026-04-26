@@ -145,7 +145,6 @@ Use with caution! There is no undo nor is there testing. You have been warned.
     """)
     p.add_argument("-path",
                    action="store",
-                   type=str,
                    dest="path",
                    default=os.getcwd(),
                    help="""Path to the directory to rename files in.
@@ -154,7 +153,6 @@ By default, the current working directory is used.""")
     # check if vscode is in the path
     p.add_argument("-no-code",
                    action=argparse.BooleanOptionalAction,
-                   type=bool,
                    default=not (shutil.which("code")),
                    help="If set to true, the default editor will be used instead of vscode.")
 
